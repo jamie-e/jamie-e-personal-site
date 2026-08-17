@@ -10,8 +10,23 @@
   <body>
     <script src="assets/javascripts/carousel.js"></script>
     <div class="header-info">
+      <div class="navbar"> 
+        <a href="#bio-container" class="navbar-link">
+          Bio
+        </a>
+  
+        <a href="#image-container" class="navbar-link">
+          Images
+        </a>
+  
+        <a href="#contact-me" class="navbar-link">
+          Contact Me
+        </a>
+      </div>
+
       <h2>Jamie Ethington</h2>
       <p>Des Moines, Iowa based web developer</p>
+      <img src="images/Fancy.jpeg" class="intro-image">
     </div>
 
     <div class="main-content">
@@ -23,19 +38,8 @@
         </p>
       </div>
 
-      <div class="image-carousel">
-        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
-        <div class="carousel-track">
-          <img src="images/Sue.jpeg" class="carousel-slide active" height="500" width="500">
-          <img src="images/Fancy.jpeg" class="carousel-slide" height="500" width="500">
-          <img src="images/Wisconsin.jpg" class="carousel-slide" height="500" width="500">
-          <img src="images/Confused.jpeg" class="carousel-slide" height="500" width="500">
-        </div>
-        <button class="carousel-btn next" aria-label="Next slide">›</button>
-      </div>
-  
-      <div class="bio">
-        <h1>Bio</h1>
+      <div class="bio" id="bio-container">
+        <h2>Bio</h2>
         <p>
           I'm born and raised Des Moines, except for a brief detour to the faraway land of Indianola, Iowa! Quite the journey...
           <br />
@@ -58,9 +62,20 @@
           at local comic shops, trying new varieties at a brewery, or looking for a pool to get a few laps in.
         </p>
       </div>
+
+      <div class="image-carousel" id="image-container">
+        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+        <div class="carousel-track">
+          <img src="images/Sue.jpeg" class="carousel-slide active" height="500" width="500">
+          <img src="images/Fancy.jpeg" class="carousel-slide" height="500" width="500">
+          <img src="images/Wisconsin.jpg" class="carousel-slide" height="500" width="500">
+        </div>
+        <button class="carousel-btn next" aria-label="Next slide">›</button>
+      </div>
     </div>
 
-    <div class="footer-links">
+    <div class="footer-links" id="contact-me">
+      <h2 class="footer-header">Contact Me</h2>
       <p>Follow me! Get in touch! Look at my public profiles and stupid posts!</p>
       <ul>
         <li>
@@ -73,10 +88,6 @@
 
         <li>
           <a href="https://github.com/jamie-e" target="_blank">GitHub</a>
-        </li>
-
-        <li>
-          <a href="mailto:jamieethington1@mac.com" target="_blank">Email</a>
         </li>
       </ul>
     </div>
