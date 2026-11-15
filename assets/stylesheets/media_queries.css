@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .main-content .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content .intro .intro-text,
+  .main-content .intro .intro-image {
+    width: 100%;
+  }
+
+  .main-content .intro .intro-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
