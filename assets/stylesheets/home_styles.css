@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Grimoire";
+  src: url("../fonts/GrimoireNoire.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -17,12 +25,17 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Grimoire", Arial, sans-serif;
   width: 100%;
   margin: 0;
   color: #8A1E1E;
   min-height: 100vh;
   background-color: #1a1a1a;
+}
+
+body p {
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .navbar {
@@ -35,10 +48,10 @@ body {
 }
 
 .navbar .navbar-link {
-  font-size: 15px;
+  font-size: 22px;
   color: #8A1E1E;
   text-decoration: none;
-  margin-right: 15px;
+  margin-right: 22px;
 }
 .navbar .navbar-link:hover {
   color: #8C8C8C;
@@ -65,7 +78,7 @@ body {
 }
 
 .header-info h2 {
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .header-info p {
@@ -75,11 +88,16 @@ body {
 .page-image-img {
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-height: 500px;
-  max-width: 500px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.intro h2,
+.bio h2,
+.what-i-work-on h2,
+.hobbies h2 {
+  font-size: 45px;
 }
 
 .main-content .intro {
@@ -94,12 +112,12 @@ body {
 }
 
 .main-content .intro .intro-text {
-  width: 40%;
+  width: 45%;
   text-align: left;
 }
 
 .main-content .intro .intro-image {
-  width: 40%;
+  width: 45%;
   text-align: right;
 }
 
@@ -114,12 +132,11 @@ body {
 }
 
 .main-content .bio .bio-text {
-  width: 40%;
-  text-align: right;
+  width: 45%;
 }
 
 .main-content .bio .bio-image {
-  width: 40%;
+  width: 45%;
   text-align: left;
 }
 
@@ -140,13 +157,18 @@ body {
 }
 
 .main-content .what-i-work-on .what-i-work-on-text {
-  width: 40%;
+  width: 45%;
   text-align: left;
 }
 
 .main-content .what-i-work-on .what-i-work-on-image {
-  width: 40%;
+  width: 45%;
   text-align: right;
+}
+
+.main-content .what-i-work-on .what-i-work-on-text li {
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .main-content .hobbies {
@@ -159,13 +181,13 @@ body {
 }
 
 .main-content .hobbies .hobbies-text {
-  width: 40%;
+  width: 45%;
   text-align: left;
 }
 
 .main-content .hobbies .hobbies-image {
-  width: 40%;
-  text-align: right;
+  width: 45%;
+  text-align: leftr;
 }
 
 .footer-links {
