@@ -175,6 +175,10 @@ body p {
   text-align: right;
 }
 
+.main-content .what-i-work-on .what-i-work-on-text ul {
+  margin-bottom: 35px;
+}
+
 .main-content .what-i-work-on .what-i-work-on-text li {
   font-size: 22px;
   font-weight: 300;
