@@ -29,4 +29,22 @@
     max-width: 100%;
     height: auto;
   }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide standard links by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin-bottom: 20px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show menu when toggled */
+  }
 }

@@ -10,3 +10,10 @@ document.querySelectorAll('.navbar-link').forEach((link) => {
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navLinks = document.querySelector('.nav-links');
+
+hamburgerBtn?.addEventListener('click', () => {
+  navLinks?.classList.toggle('active');
+});
