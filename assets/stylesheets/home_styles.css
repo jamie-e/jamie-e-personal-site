@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Grimoire";
+  src: url("../fonts/GrimoireNoire.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #8A1E1E;
+}
+
+.header-info,
+.footer-links,
+.main-content {
+  box-sizing: border-box;
+}
+
+.header-info.bg-loaded::before {
+  opacity: 1;
+}
+
+body {
+  font-family: "Grimoire", Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  color: #8A1E1E;
+  min-height: 100vh;
+  /*
+    Background Image downloaded from Mustafa V on Vecteezy
+    URL: https://www.vecteezy.com/members/mfbtasarim
+  */
+  background-color: #1A1A1A;
+  background-image: url('../../images/vecteezy_textured-black-board-background-close-up-background-with_22563338.jpg');
+  background-repeat: repeat;
+}
+
+body p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #111111;
+}
+
+.navbar .navbar-link {
+  font-size: 22px;
+  color: #8A1E1E;
+  text-decoration: none;
+  margin-right: 22px;
+}
+.navbar .navbar-link:hover {
+  color: #8C8C8C;
+  text-decoration: underline;
+}
+
+.header-info {
+  /* padding: 30px;
+  padding-bottom: 75px; */
+  text-align: center;
+  font-size: 35px;
+  width: 100% !important;
+  color: #8A1E1E;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.header-info .intro-image {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.header-info h2 {
+  font-size: 45px;
+}
+
+.header-info p {
+  font-size: 20px;
+}
+
+.page-image-img {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro h2,
+.bio h2,
+.what-i-work-on h2,
+.hobbies h2 {
+  font-size: 45px;
+}
+
+.main-content .intro {
+  margin-top: 75px;
+  margin-bottom: 45px;
+  padding: 30px;
+  background-color: #111111;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content .intro .intro-text {
+  width: 45%;
+  text-align: left;
+}
+
+.main-content .intro .intro-image {
+  width: 45%;
+  text-align: right;
+}
+
+.main-content .bio {
+  margin-bottom: 75px;
+  padding: 30px;
+  background-color: #111111;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content .bio .bio-text {
+  width: 45%;
+}
+
+.main-content .bio .bio-image {
+  width: 45%;
+  text-align: left;
+}
+
+#bio-container,
+#image-container,
+#contact-me {
+  scroll-margin-top: 30px;
+}
+
+.main-content .what-i-work-on {
+  padding: 30px;
+  background-color: #111111;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content .what-i-work-on .what-i-work-on-text {
+  width: 45%;
+  text-align: left;
+}
+
+.main-content .what-i-work-on .what-i-work-on-image {
+  width: 45%;
+  text-align: right;
+}
+
+.main-content .what-i-work-on .what-i-work-on-text ul {
+  margin-bottom: 35px;
+}
+
+.main-content .what-i-work-on .what-i-work-on-text li {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.main-content .hobbies {
+  padding: 30px;
+  background-color: #111111;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content .hobbies .hobbies-text {
+  width: 45%;
+  text-align: left;
+}
+
+.main-content .hobbies .hobbies-image {
+  width: 45%;
+  text-align: leftr;
+}
+
+.footer-links {
+  padding: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100% !important;
+}
+
+.footer-links .footer-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: disc;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #8A1E1E;
+}
+
+.footer-links a:hover {
+  color: #AFAFAF;
+  text-decoration: underline;
+}
